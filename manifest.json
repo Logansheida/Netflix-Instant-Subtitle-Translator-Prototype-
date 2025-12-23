@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Instant Translator",
+  "version": "1.0",
+  "description": "Traduction instantanée des sous-titres Netflix",
+  "content_scripts": [
+    {
+      "matches": ["https://www.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
